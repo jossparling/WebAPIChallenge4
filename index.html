@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+    <!-- Start Quiz Button -->
+    <div class="start-btn"><button>Start Quiz</button></div>
+
+    <!-- Rules Box -->
+    <section class="rule-box">
+        <h1 class="rule-title"><span>Rules of this Quiz</span></h1>
+        <ul class="rule-list">
+            <li class="rule">1. You will have only <span>15 seconds</span> per question.</li>
+            <li class="rule">2. Once you select your answer, it can't be undone.</li>
+            <li class="rule">3. You can't select any option once time elapses.</li>
+            <li class="rule">4. When you start the quiz you can't exit.</li>
+            <li class="rule">5. You'll get points for correct responses.</li>
+        </ul>
+    <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+    </div>
+    </section>
+
+    <!-- Quiz Box -->
+    <div class="quiz-box">
+        <header>
+            <h2 class="title">Quiz</h2>
+            <h3 class="timer">
+                <p class="time-left">Time Left</p>
+                <p class="timer-sec">15</p>
+            </h3>
+            <h4 class="time-line"></h4>
+        </header>
+        <section>
+            <div class="que-text">
+                <!-- Insert JavaScript Questions -->
+            </div>
+            <div class="option-list">
+                <!-- Insert JavaScript Options -->
+            </div>
+        </section>
+
+        <!-- Quiz Footer -->
+        <footer>
+            <div class="total-que">
+                <!-- Insert Question Count Number from JavaScript -->
+            </div>
+            <button class="next-btn">Next Question</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result-box">
+        <div class="icon">
+            <i class="fa-crown"></i>
+        </div>
+        <div class="cromplete-text">You've completed the Quiz!</div>
+        <div class="score-text">
+            <!-- Insert Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+    <script src="./assets/questions.js"></script>
+    <script src="./assets/script.js"></script> 
+</body>
+</html>
