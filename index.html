@@ -9,68 +9,10 @@
 </head>
 
 <body>
-    <!-- Start Quiz Button -->
-    <div class="start_btn"><button>Start Quiz</button></div>
-
-    <!-- info Box -->
-    <section class="info_box">
-        <h1 class="info_title"><span>Rules of this Quiz</span></h1>
-        <ul class="info_list">
-            <li class="info">1. You will have only <span>15 seconds</span> per question.</li>
-            <li class="info">2. Once you select your answer, it can't be undone.</li>
-            <li class="info">3. You can't select any option once time elapses.</li>
-            <li class="info">4. When you start the quiz you can't exit.</li>
-            <li class="info">5. You'll get points for correct responses.</li>
-        </ul>
-    <div class="buttons">
-        <button class="quit">Exit Quiz</button>
-        <button class="restart">Continue</button>
-    </div>
-    </section>
-
-    <!-- Quiz Box -->
-    <div class="quiz_box">
-        <header>
-            <h2 class="title">Quiz</h2>
-            <h3 class="timer">
-                <p class="time_left">Time Left</p>
-                <p class="timer_sec">15</p>
-            </h3>
-            <h4 class="time_line"></h4>
-        </header>
-        <section>
-            <div class="que_text">
-                <!-- Insert JavaScript Questions -->
-            </div>
-            <div class="option_list">
-                <!-- Insert JavaScript Options -->
-            </div>
-        </section>
-
-        <!-- Quiz Footer -->
-        <footer>
-            <div class="total_que">
-                <!-- Insert Question Count Number from JavaScript -->
-            </div>
-            <button class="next_btn">Next Question</button>
-        </footer>
-    </div>
-
-    <!-- Result Box -->
-    <div class="result_box">
-        <div class="icon">
-            <i class="fa_crown"></i>
-        </div>
-        <div class="cromplete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-            <!-- Insert Score Result from JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
-        </div>
-    </div>
-    <script src="./assets/questions.js"></script>
+    <div id="quiz"></div>
+    <p>Time : <span id="timer"></span></p>
+<button id="submit">Submit Quiz</button>
+<div id="results"></div>
     <script src="./assets/script.js"></script> 
 </body>
 </html>
